@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto Condensed', 'serif';
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column  ;
+}
+header {
+  width: 100%;
+  padding: 1em 2em;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 16px;
+}
+
+header .logo img{
+  width: 350px;
+}
+
+header .menuBar {
+
+}
+header .menuBar a {
+  margin-right: 2em;
+  padding: 0 .25em;
+  border-bottom: solid 3px transparent;
+  transition: all ease 0.25s;
+
+  cursor: default;
+}
+header .menuBar a:last-child {
+  margin-right: 0em;
+}
+header .menuBar a:hover {
+  border-bottom-color:rgb(95, 216, 105);
+}
+header .menuBar .btn {
+  background: rgb(95, 216, 105);
+  padding: .75em;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+#banner {
+  position: relative;
+
+  background: url('./../img/banner.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+}
+#banner::after {
+  content: 'Bringing back hope';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 60px;
+  font-weight:700;
+text-transform: capitalize;
+}
+main {
+  width: 90%;
+}
+article section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+article section.ourImpact {
+  flex-direction: row-reverse;
+}
+section .text {
+  padding: 0 5em;
+}
+section .text h2 {
+  margin-bottom: .5em;
+  font-size: 55px;
+}
+section .text p {
+  margin-bottom: 1.75em;
+  line-height: 2em;
+  letter-spacing: .8px;
+}
+section .text .btn {
+  padding: 0 .25em;
+  border-bottom: solid 4px rgba(0,0,0,0.1);
+  font-weight: 700;
+  transition: all ease .25s;
+}
+section .text .btn:hover {
+  border-bottom-color: rgb(95, 216, 105);
+}
+section .text, article section .img {
+  width: 50%;
+  
+}
+section .img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .img img {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5) 7px 7px 14px;
+}
+section.ourImpact .img img {
+  box-shadow: rgba(0, 0, 0, 0.5) -7px 7px 14px;
+}
+
+section.donate form {
+  width: 50%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column
+}
+section.donate .textArea{
+  position: relative;
+
+  margin-bottom: 2em;
+}
+section.donate .textArea input{
+  width: 50%;
+} 
+section.donate .textArea textarea {
+  width: 100%;
+  resize: none;
+}
+section.donate .textArea textarea,section.donate .textArea input {
+  border: none;
+  border-bottom: solid 1px rgba(0,0,0,0.2);
+  outline: none;
+}
+section.donate .textArea label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 5px 0;
+
+  pointer-events: none;
+  color: rgba(0,0,0,0.25);
+}
+
+section.donate .textArea textarea:focus ~ label, 
+section.donate .textArea textarea:valid ~ label, 
+section.donate .textArea input:focus ~ label,
+section.donate .textArea input:valid ~ label {
+  transform: translateY(-20px);
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 12px;
+
+  color: rgb(95, 216, 105);
+}

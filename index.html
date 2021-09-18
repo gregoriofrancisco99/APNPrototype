@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>APN - Prototype</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
@@ -20,36 +21,53 @@
         <button href="#" class="btn donateBtn">Donate now</button>
       </nav>
     </header>
-
+    <div id="banner">
+    </div>
     <main>
       <article>
-        <section>
-          <h2>Who we are</h2>
-          <p>We're an NGO founded in 1939, based on Noruegian label moviment.
-            We've been engaged in several kind of activities going from comunities development, mine clearence, health
-            care, agriculture, etc.</p>
-          <button class="btn knowMoreBtn">See More</button>
+        <section class="whoWeAre">
+          <div class="text">
+            <h2>Who we are</h2>
+            <p>We're an NGO founded in 1939, based on Norwegian label moviment.
+              We've been engaged in several kind of activities going from comunities development, mine clearence, health
+              care, agriculture, etc.</p>
+            <a href="#" class="btn knowMoreBtn">Learn more</a>
+          </div>
+          <figure class="img">
+            <img src="./assets/img/Who we are.jpg" alt="" />
+          </figure>
         </section>
 
-        <section>
-          <h2>How we impact population</h2>
-          <p>We impact population by contributing by the sustentable development by reducing the risk of mines and
-            others explosive ordinance by freeing land for development activities.</p>
-          <button class="btn knowMoreBtn">See More</button>
+        <section class="ourImpact">
+          <div class="text">
+            <h2>How we impact population</h2>
+            <p>We impact population by contributing by the sustentable development by reducing the risk of mines and
+              others explosive ordinance by freeing land for development activities.</p>
+            <a href="#" class="btn knowMoreBtn">Learn more</a>
+          </div>
+          <figure class="img">
+            <img src="./assets/img/how we impact.jpg" alt="" />
+          </figure>
         </section>
-        <section>
-          <h2>Donate</h2>
-          <p>Donation is what keep us doing our work, helping and impacting people.
-            Help us impacting people's lives, too.
-          </p>
+        <section class="donate">
+          <div class="text">
+            <h2>Donate</h2>
+            <p>Donation is what keep us doing our work, helping and impacting people.
+              Help us impacting peoples lives, too.
+            </p>
+          </div>
           <form action="">
             <div class="textArea fullName">
-              <input type="text">
+              <input type="text" required>
               <label for="Full name">Full name</label>
             </div>
             <div class="textArea email">
-              <input type="email">
+              <input type="email" required>
               <label for="Email">Email</label>
+            </div>
+            <div class="textArea mobileNumber">
+              <input type="number" required>
+              <label for="number">Mobile number</label>
             </div>
             <div class="textArea message">
               <textarea></textarea>
@@ -69,7 +87,7 @@
         <img src="./assets/img/toyota.png" alt="" />
       </div>
       <nav>
-        
+
       </nav>
       <nav>
         <a href="#">About</a>
